@@ -2,19 +2,24 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const findings = [
   {
-    title: "Changing mindset is likely easier than changing workflows",
+    title: "Mindset training showed more favorable patterns than workflow mandates",
     detail:
-      "Across our two tasks, we found that participants primed with an AI-first mindset outperformed those with a traditional mindset, while participants placed into an AI-first workflow experienced more friction than those in a traditional workflow. While these were separate comparisons, taken together they suggest that shifting mindset may be a more productive lever than mandating workflow change.",
+      "Participants who received mindset training were more likely to produce top-quality individual work (exploratory binary model, OR = 2.07), while participants placed into a mandated AI workflow experienced more friction and lower output quality. These were separate comparisons across different tasks with different designs, and should be interpreted as bounded operational lessons rather than a general verdict.",
   },
   {
     title: "Mental models shape outcomes",
     detail:
-      "Employees\u2019 mental model of AI substantially affects what they get out of it. Attending mindset-specific training as opposed to \u201c101 feature\u201d training doubled the odds of producing high-impact work.",
+      "In an exploratory analysis, attending mindset training doubled the odds of producing a perfect-score document (OR = 2.07, p = .022), though the pre-specified continuous model was null (p = .22) due to ceiling effects.",
   },
   {
     title: "True collaboration \u2260 parallel play",
     detail:
-      "True joint collaboration with AI is not the same as parallel play. Unless intentionally designed, employees may default to \u201cparallel playing\u201d with their own Copilot rather than using it as a team, underscoring how complex collaborative workflows with AI are.",
+      "True joint collaboration with AI is not the same as parallel play. Unless intentionally designed, employees default to \u201cparallel playing\u201d with their own Copilot rather than using it as a team. Collaborative AI workflows are harder to get right than they look.",
+  },
+  {
+    title: "You can\u2019t improve what you can\u2019t measure",
+    detail:
+      "Our AI rubric scored 68% of documents as perfect. Human raters graded the same work on a full 1\u2013to\u20135 scale, with a mean of 11.8 out of 20. The rubric was blind to differences that were actually there, which masked the treatment effect in our primary model. For organizations, the lesson is concrete: generic evaluation tools will miss what matters. Build internal measures calibrated to your own quality bar.",
   },
 ];
 
@@ -32,7 +37,7 @@ const KeyFindings = () => {
         <p
           className={`font-body text-muted-foreground max-w-xl mb-12 transition-all duration-700 delay-100 ${isVisible ? "opacity-100" : "opacity-0"}`}
         >
-          Three takeaways from the experiment.
+          Four takeaways from the experiment.
         </p>
 
         <div className="grid gap-6">

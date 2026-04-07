@@ -146,10 +146,10 @@ const TaskBChart = () => {
             OR = 2.07
           </span>
           <span className="font-body text-xs text-muted-foreground ml-2">
-            p = 0.019
+            p = 0.022
           </span>
           <p className="font-body text-xs text-muted-foreground mt-0.5">
-            95% CI [1.13, 3.82]
+            95% CI [1.12, 3.83]
           </p>
         </div>
         <div className="flex-1 bg-secondary/60 rounded-lg px-4 py-3 text-center">
@@ -164,10 +164,10 @@ const TaskBChart = () => {
       {/* Footer note */}
       <div className="px-6 pb-5 border-t pt-4">
         <p className="font-body text-xs text-muted-foreground leading-relaxed">
-          Teaching people to treat AI as a thought partner and not just a tool
-          meaningfully improved individual output quality. Confirmed at ≥18
-          threshold: OR = 1.87, p = 0.046. Standard errors clustered at pair
-          level (CR2).
+          Teaching people to treat AI as a thought partner was associated with
+          higher individual output quality at the top of the distribution. Confirmed at ≥18
+          threshold: OR = 1.87, p = 0.049. Standard errors clustered at pair
+          level (CR2). The pre-specified continuous model was null (p = .22).
         </p>
       </div>
     </div>

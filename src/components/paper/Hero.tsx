@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
             Scaffolding Human–AI Collaboration: A Field Experiment on Behavioral Protocols and Cognitive Reframing
           </h1>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">A field experiment with 388 employees at Gap Inc. testing two interventions in a single day: an AI-first collaborative process, and AI-first mindset training — both compared against naturalistic AI use with full Microsoft Copilot access.
+          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">A field experiment with 388 employees at Gap Inc. testing two interventions in a single day: an AI-first collaborative process and AI-first mindset training. Both compared against naturalistic AI use with full Microsoft Copilot access.
 
 
 

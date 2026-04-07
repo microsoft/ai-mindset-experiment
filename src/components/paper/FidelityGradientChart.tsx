@@ -16,56 +16,31 @@ interface GroupData {
   points: number[];
 }
 
-// Sample data (will be replaced with real data later)
-const generateSamplePoints = (
-  median: number,
-  q1: number,
-  q3: number,
-  min: number,
-  max: number,
-  n: number,
-  seed: number
-): number[] => {
-  const rng = seededRandom(seed);
-  const points: number[] = [];
-  for (let i = 0; i < n; i++) {
-    const u = rng();
-    let val: number;
-    if (u < 0.05) val = min + rng() * (q1 - min);
-    else if (u < 0.25) val = q1 + rng() * (median - q1) * 0.5;
-    else if (u < 0.5) val = q1 + rng() * (median - q1);
-    else if (u < 0.75) val = median + rng() * (q3 - median);
-    else if (u < 0.95) val = q3 + rng() * (max - q3) * 0.5;
-    else val = q3 + rng() * (max - q3);
-    points.push(Math.max(min, Math.min(max, val)));
-  }
-  return points;
-};
-
+// Real data from study analysis (Task A experience scale, 1-5 Likert, by compliance group)
 const groups: GroupData[] = [
   {
     label: ["Control"],
     color: "hsl(220, 10%, 65%)",
     colorLight: "hsl(220, 10%, 85%)",
-    points: generateSamplePoints(2.5, 2.2, 3.2, 1.0, 5.0, 120, 42),
+    points: [1, 1, 1, 1, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.25, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.75, 1.75, 1.75, 1.75, 1.75, 1.75, 1.75, 1.75, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.25, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 2.75, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3.25, 3.25, 3.25, 3.25, 3.25, 3.25, 3.25, 3.25, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.5, 3.75, 3.75, 3.75, 3.75, 3.75, 3.75, 3.75, 3.75, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4.25, 4.25, 4.5, 4.5, 4.5, 4.75, 5, 5, 5],
   },
   {
     label: ["Treatment", "Stranded"],
     color: "hsl(24, 85%, 58%)",
     colorLight: "hsl(24, 85%, 78%)",
-    points: generateSamplePoints(2.0, 1.7, 2.2, 1.0, 3.5, 30, 99),
+    points: [1, 1, 1, 1, 1, 1, 1.25, 1.25, 1.5, 1.5, 1.5, 1.75, 1.75, 1.75, 1.75, 2, 2, 2, 2, 2, 2, 2.25, 2.25, 2.25, 2.5, 2.5, 2.75, 3, 3, 4, 4],
   },
   {
     label: ["Treatment", "Parallel"],
     color: "hsl(40, 90%, 60%)",
     colorLight: "hsl(40, 90%, 78%)",
-    points: generateSamplePoints(2.8, 2.5, 3.4, 1.0, 5.0, 70, 137),
+    points: [1, 1, 1.25, 1.25, 1.5, 1.5, 1.75, 2, 2, 2, 2, 2, 2.25, 2.25, 2.25, 2.25, 2.5, 2.5, 2.5, 2.5, 2.75, 2.75, 3, 3, 3, 3, 3, 3, 3, 3.25, 3.25, 3.25, 3.25, 3.5, 3.5, 3.75, 4, 4, 4, 4, 4.25, 5, 5, 5],
   },
   {
     label: ["Treatment", "True Joint"],
     color: "hsl(174, 52%, 50%)",
     colorLight: "hsl(174, 52%, 72%)",
-    points: generateSamplePoints(3.0, 2.8, 3.9, 1.5, 5.0, 55, 211),
+    points: [1, 2, 2.25, 2.25, 2.25, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.5, 2.75, 2.75, 2.75, 3, 3, 3.5, 3.5, 3.75, 3.75, 4, 4, 4, 4, 4, 4, 4, 4, 4.5, 5, 5],
   },
 ];
 
@@ -357,7 +332,7 @@ const FidelityGradientChart = () => {
       {/* Callout */}
       <div className="mx-6 mb-6 rounded-lg border-l-4 border-highlight bg-secondary/50 px-5 py-4">
         <p className="font-body text-sm leading-relaxed text-foreground/90">
-          While the control group performed better on the task, the pairs that truly collaborated with AI — in <span className="font-display font-bold">"True Joint"</span> mode — reported the <span className="font-display font-bold">best experience</span>.
+          The control group performed better on the task, but pairs in <span className="font-display font-bold">"True Joint"</span> mode reported the <span className="font-display font-bold">highest experience scores</span> (descriptive comparison; compliance groups reflect post-randomization selection).
         </p>
       </div>
     </div>

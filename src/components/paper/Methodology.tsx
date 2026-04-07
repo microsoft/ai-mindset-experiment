@@ -16,7 +16,7 @@ const arms = [
 const outcomes = [
   "LLM-graded document quality",
   "Self-reported experience",
-  "Pre-post belief change",
+  "Belief change across session",
 ];
 
 const Methodology = () => {
@@ -34,8 +34,8 @@ const Methodology = () => {
           className={`font-body text-muted-foreground max-w-2xl mb-12 transition-all duration-700 delay-100 ${isVisible ? "opacity-100" : "opacity-0"}`}
         >
           A single-day field experiment with 388 Gap Inc. employees randomized
-          into two bundled arms. Both arms had full access to Microsoft Copilot —
-          the study tests <em>how</em> people use AI, not whether they have it.
+          into two bundled arms. Both arms had full access to Microsoft Copilot.
+          The study tests <em>how</em> people use AI, not whether they have it.
         </p>
 
         {/* Experiment diagram */}
