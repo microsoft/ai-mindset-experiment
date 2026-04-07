@@ -489,13 +489,12 @@ const TheExperiment = () => {
               <div className="bg-card rounded-lg border-2 border-[hsl(var(--highlight))] shadow-sm p-5 text-center opacity-0 translate-y-3 transition-all duration-500 ease-out delay-[1200ms] [.cards-visible_&]:opacity-100 [.cards-visible_&]:translate-y-0">
                 <span className="inline-block font-body text-[10px] font-semibold uppercase tracking-widest text-highlight mb-2">Treatment</span>
                 <p className="font-body text-sm text-foreground leading-relaxed">
-                  AI-First training reframing AI as a <em className="not-italic font-semibold">thought partner</em> rather than a tool
+                  AI Mindset training reframing AI as a <em className="not-italic font-semibold">thought partner</em> rather than a tool
                 </p>
               </div>
             </div>
             <p>
-              Training was facilitated by Conor Grennan, former Chief AI
-              Architect at NYU Stern and CEO of AI Mindset.
+              The AI Mindset training was developed by Conor Grennan, CEO of AI Mindset and former Chief AI Architect at NYU Stern, whose behavioral approach to AI adoption formed the basis of the treatment condition.
             </p>
           </div>
 
@@ -507,8 +506,7 @@ const TheExperiment = () => {
               The Results
             </h4>
             <p className="font-body text-sm text-muted-foreground leading-relaxed mb-6">
-              Participants who received the mindset intervention of thought
-              partner training were associated with:
+              Participants who received AI Mindset training were associated with:
             </p>
             <div className="space-y-1">
               <AnimatedStat value="2×" description="double the odds of producing high‑impact work" delay={0} />
@@ -520,7 +518,7 @@ const TheExperiment = () => {
           <div className="mt-12 mb-12">
             <blockquote className="relative border-l-4 border-[hsl(var(--highlight))] pl-6 py-2">
               <p className="font-display text-base md:text-lg font-medium leading-relaxed italic text-foreground/85">
-                In our exploratory analysis, about 62 out of 100 people who got standard tool training produced a top-quality document. With mindset training, it was 77. That's 15 more people per 100 clearing the bar, from a single session. The continuous model was null, so we're cautious about this, but the pattern was consistent across multiple thresholds. If it holds up in further testing, the practical implications are worth paying attention to.
+                In our exploratory analysis, about 62 out of 100 people who got standard tool training produced a top-quality document. With AI Mindset training, it was 77. That's 15 more people per 100 clearing the bar, from a single session. The continuous model was null, so we're cautious about this, but the pattern was consistent across multiple thresholds. If it holds up in further testing, the practical implications are worth paying attention to.
               </p>
             </blockquote>
             <div className="mt-4 pl-6">
@@ -567,7 +565,7 @@ const TheExperiment = () => {
                 <>
                       A brief{" "}
                       <span className="underline decoration-highlight decoration-2 underline-offset-2">
-                        mindset intervention
+                        AI Mindset intervention
                       </span>{" "}
                       showed promising results.
                     </>,

@@ -31,12 +31,12 @@ const Index = () => {
           <blockquote className="relative">
             <span className="absolute -top-6 left-1/2 -translate-x-1/2 font-display text-6xl text-highlight/30 select-none leading-none">"</span>
             <p className="font-display text-xl md:text-2xl font-bold leading-snug italic text-foreground/90">
-              This study was an important investment in understanding - scientifically - how to drive AI adoption. It reflects Gap Inc.'s strategy to accelerate AI within the company: Enable, Optimize, Reinvent.&nbsp;You don’t reinvent the business with AI overnight - you enable the people, optimize the work, and only then scale transformation.
+              This study was an important investment in understanding how to drive AI adoption. It reflects Gap Inc.’s strategy to accelerate AI within the company: Enable, Optimize, Reinvent.&nbsp;You don’t reinvent the business with AI overnight - you enable the people, optimize the work, and only then scale transformation.
             </p>
           </blockquote>
           <div className="mt-6">
             <p className="font-display font-bold text-sm">Sven Gerjets</p>
-            <p className="font-body text-sm text-muted-foreground">CIO, GAP Inc.</p>
+            <p className="font-body text-sm text-muted-foreground">CTO, Gap Inc.</p>
           </div>
         </div>
       </section>
@@ -150,8 +150,8 @@ const Index = () => {
           </h2>
           <div className="space-y-8">
             {[
-              { name: "Sven Gerjets", bio: "Sven is Gap Inc's CIO and lead the company's digital transformation, data science and technology portfolio." },
-              { name: "Mario Diaz", bio: "Mario is a Sr Manager, Learning Experience Corporate, who champions AI experimentation and adoption by helping teams turn curiosity into practical impact." },
+              { name: "Sven Gerjets", bio: "Sven is Gap Inc.'s CTO and leads the company's digital transformation, data science and technology portfolio." },
+              { name: "Mario Diaz", bio: "Mario is a Sr Manager, Future Skills Development, who champions AI experimentation and adoption by helping teams turn curiosity into practical impact." },
             ].map((person) => (
               <div key={person.name}>
                 <h3 className="font-display font-bold text-base md:text-lg">{person.name}</h3>
@@ -161,6 +161,12 @@ const Index = () => {
               </div>
             ))}
           </div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 mt-20">
+            Acknowledgements
+          </h2>
+          <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed">
+            The authors thank Conor Grennan (<a href="https://www.ai-mindset.ai" target="_blank" rel="noopener noreferrer" className="text-highlight underline underline-offset-2 hover:text-foreground transition-colors">AI Mindset</a>) for developing and facilitating the training modules used in the cognitive scaffolding condition. We thank Gap Inc. for hosting the AI Learning Day event and supporting the research.
+          </p>
           {/* Whitepaper CTA */}
           <a
             href="#"

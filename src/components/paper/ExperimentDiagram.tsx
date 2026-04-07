@@ -128,7 +128,7 @@ const ExperimentDiagram = () => {
             <DoubleArrow className="text-foreground/40" />
             <AiBox />
           </div>
-          <p className="font-body text-xs text-muted-foreground mt-4 text-center leading-snug max-w-[140px]">AI-First Training (Thought partner framing)
+          <p className="font-body text-xs text-muted-foreground mt-4 text-center leading-snug max-w-[140px]">AI Mindset training (Thought partner framing)
 
           </p>
         </div>

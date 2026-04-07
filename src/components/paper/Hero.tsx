@@ -16,7 +16,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
             Scaffolding Human–AI Collaboration: A Field Experiment on Behavioral Protocols and Cognitive Reframing
           </h1>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">A field experiment with 388 employees at Gap Inc. testing two interventions in a single day: an AI-first collaborative process and AI-first mindset training. Both compared against naturalistic AI use with full Microsoft Copilot access.
+          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">A field experiment with 388 employees at Gap Inc. testing two interventions in a single day: an AI-first collaborative process and AI Mindset training. Both compared against naturalistic AI use with full Microsoft Copilot access.
 
 
 
@@ -27,20 +27,6 @@ const Hero = () => {
           </p>
         </div>
 
-        <div
-          className={`flex flex-wrap items-center justify-center gap-3 text-sm font-body text-muted-foreground transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
-          style={{ filter: isVisible ? "blur(0)" : "blur(4px)" }}>
-          
-          <span className="bg-highlight-soft text-highlight px-3 py-1 rounded-full font-medium">
-            n = 388
-          </span>
-          <span className="bg-secondary px-3 py-1 rounded-full">
-            1-day field experiment
-          </span>
-          <span className="bg-secondary px-3 py-1 rounded-full">2 intervention protocols
-
-          </span>
-        </div>
 
         <nav
           className={`mt-12 flex flex-wrap justify-center gap-4 font-body text-sm transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
