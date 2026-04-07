@@ -111,7 +111,7 @@ const FlipCard = ({
         
         {/* Front face */}
         <div
-          className="relative bg-card rounded-xl border shadow-sm px-6 py-10 flex flex-col items-center justify-center text-center min-h-[180px]"
+          className="relative bg-card rounded-xl border shadow-sm px-6 py-10 flex flex-col items-center justify-center text-center min-h-[220px]"
           style={{ backfaceVisibility: "hidden" }}>
           
           <div className="w-12 h-12 rounded-full bg-foreground text-background flex items-center justify-center font-display font-bold text-xl mb-3">
@@ -324,10 +324,10 @@ const TheExperiment = () => {
                 What does this mean? Why did the control group perform better than the treated group?
               </p>
               <p>
-                One possible explanation is that mandating a new AI‑mediated workflow introduces coordination and technical friction at precisely the moment when employees are still developing their own strategies for interacting with the system. These early coordination costs may temporarily outweigh the intended benefits of more structured collaboration.
+                One possible explanation: mandating a new AI workflow introduces coordination friction while employees are still figuring out how to use the system. The overhead of synchronizing, meeting, and following a protocol may have cost more than it added.
               </p>
               <p>
-                We also observed that collaboration varied across groups, and this may have impacted the outcomes.
+                We also observed that collaboration quality varied across groups, which may have affected the results.
               </p>
             </div>
             
@@ -386,10 +386,10 @@ const TheExperiment = () => {
                 num: "2",
                 heading:
                 <>
-                      Only <em>True Joint</em> unlocks lift.
+                      Only <em>True Joint</em> was associated with higher scores.
                     </>,
 
-                sub: "Value appears when shared human context flows into the AI."
+                sub: "Shared human context flowing into the AI mattered more than meeting alone."
               },
               {
                 num: "3",
@@ -424,7 +424,7 @@ const TheExperiment = () => {
             <TaskDropdown
               label="Task B"
               title="Individual Task — Communications Strategy"
-              description="Each participant independently developed a communications strategy addressing three hypothetical stakeholder concerns about AI adoption at Gap Inc.: a) data governance and transparency, b) workforce transition issues and (c) sustainability considerations related to AI infrastructure." />
+              description="Each participant independently developed a strategic communications response addressing three stakeholder concerns about AI adoption at Gap Inc.: (a) data transparency and privacy, (b) labor displacement, and (c) environmental considerations related to AI energy footprint." />
             
           </div>
 
@@ -508,7 +508,7 @@ const TheExperiment = () => {
             </h4>
             <p className="font-body text-sm text-muted-foreground leading-relaxed mb-6">
               Participants who received the mindset intervention of thought
-              partner training had:
+              partner training were associated with:
             </p>
             <div className="space-y-1">
               <AnimatedStat value="2×" description="double the odds of producing high‑impact work" delay={0} />
@@ -520,7 +520,7 @@ const TheExperiment = () => {
           <div className="mt-12 mb-12">
             <blockquote className="relative border-l-4 border-[hsl(var(--highlight))] pl-6 py-2">
               <p className="font-display text-base md:text-lg font-medium leading-relaxed italic text-foreground/85">
-                For every 100 employees who get basic AI tool training, about 62 will produce a top-quality strategy document. If you give them mindset training instead, about 77 will. That is 15 additional people per 100 hitting the quality bar. At scale — across hundreds or thousands of employees — that adds up. And the training itself was a single session, not a semester-long program. The return on that investment is high.
+                In our exploratory analysis, about 62 out of 100 people who got standard tool training produced a top-quality document. With mindset training, it was 77. That's 15 more people per 100 clearing the bar, from a single session. The continuous model was null, so we're cautious about this, but the pattern was consistent across multiple thresholds. If it holds up in further testing, the practical implications are worth paying attention to.
               </p>
             </blockquote>
             <div className="mt-4 pl-6">
@@ -569,16 +569,16 @@ const TheExperiment = () => {
                       <span className="underline decoration-highlight decoration-2 underline-offset-2">
                         mindset intervention
                       </span>{" "}
-                      can have high impact.
+                      showed promising results.
                     </>,
 
-                sub: "Small reframes can produce outsized results."
+                sub: "A single training session was associated with better output quality."
               },
               {
                 num: "2",
                 heading:
                 <>
-                      How you <em>think</em> about AI is critical — not just how you use it.
+                      How you <em>think</em> about AI matters as much as how you use it.
                     </>,
 
                 sub: "Mental models matter as much as technical skill."
@@ -587,10 +587,10 @@ const TheExperiment = () => {
                 num: "3",
                 heading:
                 <>
-                      Engaging AI iteratively beats operating it transactionally.
+                      Iterative AI engagement was associated with better outcomes than transactional use.
                     </>,
 
-                sub: "Conversation, not commands, unlocks the value."
+                sub: "Conversation over commands."
               }].
               map((card, i) =>
               <FlipCard key={i} num={card.num} heading={card.heading} sub={card.sub} />

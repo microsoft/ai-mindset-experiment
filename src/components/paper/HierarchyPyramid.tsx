@@ -7,7 +7,7 @@ const layers = [
     label: "Behavioral Scaffolding",
     sub: "Mandate protocols",
     detail:
-      "Structured workflows can formalize collaboration patterns, but mandating them too early creates friction that depresses both performance and belief in AI.",
+      "Structured workflows can formalize collaboration patterns, but mandating them too early may create friction that reduces performance. In our study, the structured protocol was associated with lower document quality and substantially lower document production.",
     color: "hsl(200 70% 65%)",
     colorHover: "hsl(200 75% 58%)",
   },
@@ -16,7 +16,7 @@ const layers = [
     label: "Cognitive Scaffolding",
     sub: "Mindset-only works if base is solid",
     detail:
-      "Reframing AI as a thought partner — not just a tool — doubled the odds of high-impact work. But this only works when employees already have functional fluency.",
+      "In an exploratory analysis, reframing AI as a thought partner was associated with doubled odds of producing top-quality work (OR = 2.07), though the primary continuous model was null.",
     color: "hsl(200 65% 38%)",
     colorHover: "hsl(200 70% 30%)",
   },
