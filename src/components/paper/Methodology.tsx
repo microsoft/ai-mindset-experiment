@@ -4,7 +4,7 @@ const arms = [
   {
     arm: "Treatment",
     taskA: "AI-First protocol: \u201CCreate-Out-Loud\u201D collaborative protocol",
-    taskB: "AI-First training \u2014 AI as a \u201Cthought partner\u201D",
+    taskB: "AI Mindset training \u2014 AI as a \u201Cthought partner\u201D",
   },
   {
     arm: "Control",

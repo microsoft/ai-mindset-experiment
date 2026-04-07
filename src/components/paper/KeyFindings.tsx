@@ -4,12 +4,12 @@ const findings = [
   {
     title: "Mindset training showed more favorable patterns than workflow mandates",
     detail:
-      "Participants who received mindset training were more likely to produce top-quality individual work (exploratory binary model, OR = 2.07), while participants placed into a mandated AI workflow experienced more friction and lower output quality. These were separate comparisons across different tasks with different designs, and should be interpreted as bounded operational lessons rather than a general verdict.",
+      "Participants who received AI Mindset training were more likely to produce top-quality individual work (exploratory binary model, OR = 2.07), while participants placed into a mandated AI workflow experienced more friction and lower output quality. These were separate comparisons across different tasks with different designs, and should be interpreted as bounded operational lessons rather than a general verdict.",
   },
   {
     title: "Mental models shape outcomes",
     detail:
-      "In an exploratory analysis, attending mindset training doubled the odds of producing a perfect-score document (OR = 2.07, p = .022), though the pre-specified continuous model was null (p = .22) due to ceiling effects.",
+      "In an exploratory analysis, attending AI Mindset training doubled the odds of producing a perfect-score document (OR = 2.07, p = .022), though the pre-specified continuous model was null (p = .22) due to ceiling effects.",
   },
   {
     title: "True collaboration \u2260 parallel play",

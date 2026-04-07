@@ -12,7 +12,7 @@ import {
 
 const data = [
   { name: "Control", subtitle: "(basic tool training)", value: 62, count: "76/123" },
-  { name: "Treatment", subtitle: "(partnership training)", value: 77, count: "67/87" },
+  { name: "Treatment", subtitle: "(AI Mindset training)", value: 77, count: "67/87" },
 ];
 
 const COLORS = ["hsl(210, 18%, 55%)", "hsl(4, 55%, 65%)"];
@@ -78,7 +78,7 @@ const TaskBChart = () => {
     <div className="bg-card rounded-xl border shadow-sm overflow-hidden">
       <div className="px-6 pt-6 pb-2">
         <h4 className="font-display font-bold text-lg md:text-xl leading-snug">
-          Partnership Training Doubled the Odds of a Perfect Score
+          AI Mindset Training Doubled the Odds of a Perfect Score
         </h4>
         <p className="font-body text-sm text-muted-foreground mt-1">
           % of individuals scoring 20/20 on the strategy task&ensp;|&ensp;N =
