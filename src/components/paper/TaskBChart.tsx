@@ -12,7 +12,7 @@ import {
 
 const data = [
   { name: "Control", subtitle: "(basic tool training)", value: 62, count: "76/123" },
-  { name: "Treatment", subtitle: "(partnership training)", value: 77, count: "67/87" },
+  { name: "Treatment", subtitle: "(AI Mindset training)", value: 77, count: "67/87" },
 ];
 
 const COLORS = ["hsl(210, 18%, 55%)", "hsl(4, 55%, 65%)"];
@@ -78,7 +78,7 @@ const TaskBChart = () => {
     <div className="bg-card rounded-xl border shadow-sm overflow-hidden">
       <div className="px-6 pt-6 pb-2">
         <h4 className="font-display font-bold text-lg md:text-xl leading-snug">
-          Partnership Training Doubled the Odds of a Perfect Score
+          AI Mindset Training Doubled the Odds of a Perfect Score
         </h4>
         <p className="font-body text-sm text-muted-foreground mt-1">
           % of individuals scoring 20/20 on the strategy task&ensp;|&ensp;N =
@@ -146,10 +146,10 @@ const TaskBChart = () => {
             OR = 2.07
           </span>
           <span className="font-body text-xs text-muted-foreground ml-2">
-            p = 0.019
+            p = 0.022
           </span>
           <p className="font-body text-xs text-muted-foreground mt-0.5">
-            95% CI [1.13, 3.82]
+            95% CI [1.12, 3.83]
           </p>
         </div>
         <div className="flex-1 bg-secondary/60 rounded-lg px-4 py-3 text-center">
@@ -164,10 +164,10 @@ const TaskBChart = () => {
       {/* Footer note */}
       <div className="px-6 pb-5 border-t pt-4">
         <p className="font-body text-xs text-muted-foreground leading-relaxed">
-          Teaching people to treat AI as a thought partner and not just a tool
-          meaningfully improved individual output quality. Confirmed at ≥18
-          threshold: OR = 1.87, p = 0.046. Standard errors clustered at pair
-          level (CR2).
+          Teaching people to treat AI as a thought partner was associated with
+          higher individual output quality at the top of the distribution. Confirmed at ≥18
+          threshold: OR = 1.87, p = 0.049. Standard errors clustered at pair
+          level (CR2). The pre-specified continuous model was null (p = .22).
         </p>
       </div>
     </div>

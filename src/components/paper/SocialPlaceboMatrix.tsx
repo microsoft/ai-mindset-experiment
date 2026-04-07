@@ -92,7 +92,7 @@ const SocialPlaceboMatrix = () => {
                   </span>
                 </div>
                 <RevealBar
-                  text={<span className="text-white/90">Integrated loop, <em>significant lift</em></span>}
+                  text={<span className="text-white/90">Integrated loop, <em>higher scores</em></span>}
                   className="bg-[hsl(210,25%,52%)] hover:bg-[hsl(210,25%,48%)]"
                 />
               </div>
@@ -147,7 +147,7 @@ const SocialPlaceboMatrix = () => {
           The <strong className="font-display font-bold">Parallel Play</strong> group produced experience outcomes indistinguishable from Baseline. That's the <em>Social Placebo</em> effect: it feels collaborative, but it doesn't change the AI's behavior.
         </p>
         <p className="font-body text-sm md:text-base text-foreground/85 leading-relaxed">
-          <strong className="font-display font-bold">True Joint</strong>, by contrast, integrates the AI into the shared loop and is the only pattern that produced a meaningful lift.
+          <strong className="font-display font-bold">True Joint</strong> integrates the AI into the shared loop and is the only pattern associated with higher scores. These compliance comparisons are descriptive only, as group membership reflects post-randomization selection.
         </p>
       </div>
     </div>

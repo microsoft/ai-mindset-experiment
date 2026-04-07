@@ -3,27 +3,27 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const dimensionCallouts: Record<string, { intro: string; items: string[] }> = {
   "Exploration &\nExperimentation": {
-    intro: "These items measure openness to trying new things with AI and a willingness to explore its capabilities:",
+    intro: "Each statement begins with \"AI can...\" or \"it is...\":",
     items: [
-      "I enjoy experimenting with new ways to use AI tools in my work.",
-      "I actively look for opportunities to try out AI in different tasks.",
-      "I feel comfortable exploring unfamiliar AI features or capabilities.",
+      "...it is valuable to look for opportunities to involve AI early in problem-solving.",
+      "...I can experiment with AI even when outcomes are uncertain.",
+      "...AI can improve outputs through iterative refinement and optimization.",
     ],
   },
   "AI as Thought\nPartner": {
-    intro: "These items assess whether participants view AI as a collaborative partner rather than just a tool:",
+    intro: "Each statement begins with \"AI can...\" or \"it is...\":",
     items: [
-      "I think of AI as a thought partner that helps me think through problems.",
-      "I engage with AI as if I'm having a conversation with a collaborator.",
-      "I treat AI as a teammate that can contribute ideas to my work.",
+      "...help me explore multiple perspectives beyond an initial answer.",
+      "...help me challenge and refine my thinking through iteration.",
+      "...assist in anticipating objections and exploring counterarguments during planning.",
     ],
   },
   "Productivity\n& Process": {
-    intro: "These items focus on how AI is perceived in terms of improving efficiency and workflow:",
+    intro: "Each statement begins with \"AI can...\":",
     items: [
-      "AI helps me complete my work more efficiently.",
-      "Using AI improves the quality of my work.",
-      "AI makes my work process smoother and more productive.",
+      "...support organizing and optimizing sequences of work activities.",
+      "...be integrated across steps of a process rather than used for isolated tasks.",
+      "...help generate and stress-test alternative strategies before making decisions.",
     ],
   },
 };
@@ -79,10 +79,10 @@ const HangoverChart = () => {
     >
       {/* Title cluster — open layout, no card box */}
       <h4 className="font-display text-xl md:text-2xl font-bold mb-1">
-        The "Hangover" &amp; The Repair
+        The "Hangover" Effect
       </h4>
       <p className="font-serif text-base text-muted-foreground mb-6 max-w-2xl">
-        <em>Pre vs. post belief scores by training type — Advanced AI Mindset training shows larger gains, especially on Exploration.</em>
+        <em>Post-Task A vs. post-Task B belief scores by training type. Treatment participants started lower (carry-over from Task A) and showed larger changes, though sensitivity analyses suggest this likely reflects recovery rather than a training effect.</em>
       </p>
 
       {/* Legend */}
@@ -258,7 +258,7 @@ const HangoverChart = () => {
       </div>
 
       <p className="font-serif text-base text-muted-foreground mt-6 max-w-2xl whitespace-pre-line">
-        <strong>How to interpret this graph:</strong> Complex AI work is hard - especially when it requires coordination. The analysis suggests that after the friction of Task A, the treatment group entered Task B with lower baseline beliefs about AI — again, a carryover effect, not a randomization failure. The mindset intervention primarily moved belief trajectories. In plain language: it helped skeptics recover and re-engage — restoring confidence and curiosity toward a higher baseline. This matters because early adoption phases are exactly where people encounter friction. If you don't address the meaning people assign to that friction, it turns into disengagement.
+        <strong>How to read this:</strong> After Task A, treatment participants had lower beliefs about AI than controls (d = 0.34, p = .008), a carry-over effect from the structured protocol friction. They then showed greater positive change from post-Task A to post-Task B. But when we adjusted for the depressed starting point (ANCOVA), the treatment effect was null for all dimensions. The pattern is more consistent with recovery from the dip than with a genuine training effect.
       </p>
     </div>
   );

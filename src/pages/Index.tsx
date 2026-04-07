@@ -31,12 +31,12 @@ const Index = () => {
           <blockquote className="relative">
             <span className="absolute -top-6 left-1/2 -translate-x-1/2 font-display text-6xl text-highlight/30 select-none leading-none">"</span>
             <p className="font-display text-xl md:text-2xl font-bold leading-snug italic text-foreground/90">
-              This study was an important investment in understanding - scientifically - how to drive AI adoption. It reflects Gap Inc.'s strategy to accelerate AI within the company: Enable, Optimize, Reinvent.&nbsp;You don’t reinvent the business with AI overnight - you enable the people, optimize the work, and only then scale transformation.
+              This study was an important investment in understanding how to drive AI adoption. It reflects Gap Inc.’s strategy to accelerate AI within the company: Enable, Optimize, Reinvent.&nbsp;You don’t reinvent the business with AI overnight - you enable the people, optimize the work, and only then scale transformation.
             </p>
           </blockquote>
           <div className="mt-6">
             <p className="font-display font-bold text-sm">Sven Gerjets</p>
-            <p className="font-body text-sm text-muted-foreground">CIO, GAP Inc.</p>
+            <p className="font-body text-sm text-muted-foreground">CTO, Gap Inc.</p>
           </div>
         </div>
       </section>
@@ -51,14 +51,14 @@ const Index = () => {
           </h2>
           <div className="font-body text-base md:text-lg text-muted-foreground leading-relaxed space-y-6">
             <p>
-              In our study, mandating a new AI‑mediated workflow introduced friction that didn't just affect task performance — it produced a measurable <em className="text-foreground font-medium not-italic">hangover effect</em>, with participants entering a subsequent task with lower beliefs about AI than those who had used it more flexibly.
+              In our study, mandating a new AI‑mediated workflow introduced friction that affected both task performance and subsequent beliefs about AI. Participants who experienced the structured protocol entered the next task with lower beliefs than those who had used AI more flexibly, a measurable <em className="text-foreground font-medium not-italic">hangover effect</em>.
             </p>
             <HangoverChart />
             <p>
-              By contrast, a brief intervention that reframed AI as a collaborative partner was associated with significantly higher odds of producing high‑impact work.
+              A brief intervention that reframed AI as a collaborative partner was associated with higher odds of producing a perfect-score document (OR = 2.07, p = .022), though the primary continuous model was null.
             </p>
             <p className="text-foreground font-display font-bold text-lg md:text-xl leading-snug">
-              Before redesigning how employees work with AI, organizations may need to redesign how employees <span className="underline decoration-highlight decoration-2 underline-offset-4">think</span> about it. In the early stages of AI integration, changing the mental model may be the highest‑leverage place to start.
+              Before redesigning how employees work with AI, organizations may benefit from addressing how employees <span className="underline decoration-highlight decoration-2 underline-offset-4">think</span> about it — though our results suggest this as a hypothesis rather than a confirmed finding.
             </p>
             <HierarchyPyramid />
           </div>
@@ -86,15 +86,15 @@ const Index = () => {
               },
               {
                 title: "High Attrition in the Treatment Group",
-                content: "Participants in the treatment group were significantly more likely to fail to complete the assigned tasks.\n\nTask A: 27% of treatment pairs didn't submit a document vs. 4% in control.\n\nTask B: 55% of treatment individuals didn't submit vs. 37% in control."
+                content: "Treatment participants were much less likely to complete the tasks.\n\nTask A: 27% of treatment pairs didn't submit a document vs. 4% in control.\n\nTask B: 55% of treatment individuals didn't submit vs. 37% in control."
               },
               {
                 title: "AI Grading Bias Toward Longer Documents",
-                content: "The AI model used to grade outputs favored longer documents, with a strong correlation between word count and score. Treatment group documents were shorter on average, which may have unfairly penalized them. The researchers mitigated for this bias by statistically adjusting for document length, conducting causal mediation and robustness analyses, and validating scores against human ratings, though they acknowledged the bias remained a significant limitation."
+                content: "The AI grader favored longer documents (\u03C1 = 0.65 between word count and score for Task A). Treatment documents were shorter on average (454 vs. 740 words), which may have penalized them. Adjusting for word count reduced the Task A effect by 33%. Human validation confirmed the bias was symmetric across conditions, but it remains a real measurement concern."
               },
               {
                 title: "Ceiling Effects in Individual Task",
-                content: "68% of participants received perfect scores on the individual task (Task B), making it difficult to detect meaningful differences. To mitigate the ceiling effects, the researchers conducted a post-hoc binary analysis (e.g., perfect score vs. not) to detect differences that the original continuous scoring model could not capture, and they validated the presence of ceiling saturation through human grading, which showed a wider score distribution and confirmed the limitations of the LLM's overly generous scoring."
+                content: "68% of Task B documents scored 20/20 on the AI rubric. Human raters gave the same documents a mean of 11.8/20. The rubric could not distinguish good work from great work, which is why the continuous model was null. We used a post-hoc binary model (perfect score vs. not) to detect differences the continuous model could not."
               },
               {
                 title: "Low Compliance with the Structured Protocol",
@@ -150,8 +150,8 @@ const Index = () => {
           </h2>
           <div className="space-y-8">
             {[
-              { name: "Sven Gerjets", bio: "Sven is Gap Inc's CIO and lead the company's digital transformation, data science and technology portfolio." },
-              { name: "Mario Diaz", bio: "Mario is a Sr Manager, Learning Experience Corporate, who champions AI experimentation and adoption by helping teams turn curiosity into practical impact." },
+              { name: "Sven Gerjets", bio: "Sven is Gap Inc.'s CTO and leads the company's digital transformation, data science and technology portfolio." },
+              { name: "Mario Diaz", bio: "Mario is a Sr Manager, Future Skills Development, who champions AI experimentation and adoption by helping teams turn curiosity into practical impact." },
             ].map((person) => (
               <div key={person.name}>
                 <h3 className="font-display font-bold text-base md:text-lg">{person.name}</h3>
@@ -161,6 +161,12 @@ const Index = () => {
               </div>
             ))}
           </div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-12 mt-20">
+            Acknowledgements
+          </h2>
+          <p className="font-body text-sm md:text-base text-muted-foreground leading-relaxed">
+            The authors thank Conor Grennan (<a href="https://www.ai-mindset.ai" target="_blank" rel="noopener noreferrer" className="text-highlight underline underline-offset-2 hover:text-foreground transition-colors">AI Mindset</a>) for developing and facilitating the training modules used in the cognitive scaffolding condition. We thank Gap Inc. for hosting the AI Learning Day event and supporting the research.
+          </p>
           {/* Whitepaper CTA */}
           <a
             href="#"
