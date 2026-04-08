@@ -54,8 +54,8 @@ const patterns = [
 {
   title: "Baseline",
   bullets: [
-  "Working alone",
-  "Individual AI use",
+  "Pairs working however they chose",
+  "Individual or shared AI use, no protocol",
   "Reference point"]
 
 },
@@ -509,7 +509,7 @@ const TheExperiment = () => {
               Participants who received AI Mindset training were associated with:
             </p>
             <div className="space-y-1">
-              <AnimatedStat value="2×" description="double the odds of producing high‑impact work" delay={0} />
+              <AnimatedStat value="2×" description="the odds of producing a perfect‑score document (exploratory binary model)" delay={0} />
               <AnimatedStat value="+15 pp" description="a 15‑percentage‑point increase in perfect‑score outputs" delay={200} />
             </div>
           </div>
@@ -570,16 +570,16 @@ const TheExperiment = () => {
                       showed promising results.
                     </>,
 
-                sub: "A single training session was associated with better output quality."
+                sub: "A single training session was associated with higher odds of a perfect score."
               },
               {
                 num: "2",
                 heading:
                 <>
-                      How you <em>think</em> about AI matters as much as how you use it.
+                      How employees <em>think</em> about AI shaped their results in this study.
                     </>,
 
-                sub: "Mental models matter as much as technical skill."
+                sub: "The type of training mattered, though more research is needed to confirm."
               },
               {
                 num: "3",

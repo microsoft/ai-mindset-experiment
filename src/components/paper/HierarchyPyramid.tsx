@@ -16,7 +16,7 @@ const layers = [
     label: "Cognitive Scaffolding",
     sub: "Mindset-only works if base is solid",
     detail:
-      "In an exploratory analysis, reframing AI as a thought partner was associated with doubled odds of producing top-quality work (OR = 2.07), though the primary continuous model was null.",
+      "In an exploratory analysis, reframing AI as a thought partner was associated with doubled odds of producing a perfect-score document (OR = 2.07), though the primary continuous model was null.",
     color: "hsl(200 65% 38%)",
     colorHover: "hsl(200 70% 30%)",
   },
