@@ -48,7 +48,7 @@ const SocialPlaceboMatrix = () => {
               className="font-body text-[11px] font-semibold text-highlight whitespace-nowrap"
               style={{ writingMode: "vertical-rl", transform: "rotate(180deg)" }}
             >
-              Working alone
+              No synchronous meeting
             </span>
           </div>
         </div>
