@@ -10,9 +10,9 @@ const Hero = () => {
           className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
           style={{ filter: isVisible ? "blur(0)" : "blur(4px)" }}>
           
-          <p className="font-body text-sm font-medium uppercase tracking-widest text-highlight mb-6">
-            Working Paper · 2026
-          </p>
+          <a href="https://arxiv.org/abs/2604.08678" target="_blank" rel="noopener noreferrer" className="font-body text-sm font-medium uppercase tracking-widest text-highlight mb-6 hover:underline underline-offset-4 inline-block">
+            Working Paper · 2026 · arXiv:2604.08678
+          </a>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
             Scaffolding Human–AI Collaboration: A Field Experiment on Behavioral Protocols and Cognitive Reframing
           </h1>

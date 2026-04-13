@@ -169,7 +169,7 @@ const Index = () => {
           </p>
           {/* Whitepaper CTA */}
           <a
-            href="#"
+            href="https://arxiv.org/abs/2604.08678"
             target="_blank"
             rel="noopener noreferrer"
             className="group mt-14 flex items-center gap-5 rounded-xl border bg-card p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
