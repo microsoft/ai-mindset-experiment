@@ -424,7 +424,7 @@ const TheExperiment = () => {
             <TaskDropdown
               label="Task B"
               title="Individual Task — Communications Strategy"
-              description="Each participant independently developed a strategic communications response addressing three stakeholder concerns about AI adoption at Gap Inc.: (a) data transparency and privacy, (b) labor displacement, and (c) environmental considerations related to AI energy footprint." />
+              description="Each participant independently developed a strategic communications response addressing three stakeholder concerns about AI adoption at Gap Inc.: (a) data governance and transparency, (b) workforce transition issues, and (c) sustainability considerations related to AI infrastructure." />
             
           </div>
 
